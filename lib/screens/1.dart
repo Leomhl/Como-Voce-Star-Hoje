@@ -1,16 +1,27 @@
+import 'package:como_voce_star_hoje/classes/app_images.dart';
 import 'package:flutter/material.dart';
 
 class Um extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Um"),),
+      appBar: AppBar(
+        title: Text("Anakin"),
+        centerTitle: true,
+      ),
       body: Center(
         child: Column(
           children: [
-            Text("Anakin na Lava"),
-            Image.network("https://i.redd.it/h2vj5cpoghe11.jpg"),
-            Text("Você está pegadno fogo hoje!"),
+            Padding(
+              padding: EdgeInsets.only(top: 10, bottom: 5),
+              child: Text("Anakin na Lava"),
+            ),
+            Padding(
+              padding: EdgeInsets.all(5),
+              child: Image.asset(AppImages.um),
+            ),
+
+            Text("Você está pegando fogo hoje!"),
           ],
         ),
       ),

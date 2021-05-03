@@ -41,14 +41,14 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   List<Map> items = [
     {'img': AppImages.um, 'screen': Um()},
-    {'img': AppImages.um, 'screen': Dois()},
-    {'img': AppImages.um, 'screen': Tres()},
-    {'img': AppImages.um, 'screen': Quatro()},
-    {'img': AppImages.um, 'screen': Cinco()},
-    {'img': AppImages.um, 'screen': Seis()},
-    {'img': AppImages.um, 'screen': Sete()},
-    {'img': AppImages.um, 'screen': Oito()},
-    {'img': AppImages.um, 'screen': Nove()},
+    {'img': AppImages.dois, 'screen': Dois()},
+    {'img': AppImages.tres, 'screen': Tres()},
+    {'img': AppImages.quatro, 'screen': Quatro()},
+    {'img': AppImages.cinco, 'screen': Cinco()},
+    {'img': AppImages.seis, 'screen': Seis()},
+    {'img': AppImages.sete, 'screen': Sete()},
+    {'img': AppImages.oito, 'screen': Oito()},
+    {'img': AppImages.nove, 'screen': Nove()},
   ];
 
   @override
@@ -60,13 +60,25 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Padding(
         padding: EdgeInsets.all(10),
-        child: Align(
-          alignment: Alignment.center,
-          child: GridView.count(
-            shrinkWrap: true,
-            crossAxisCount: 3,
-            children: _generateItems(items, context),
-          ),
+        child: Column(
+          children: [
+            Text(
+              'Escolha um personagem',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w700,
+                
+              )
+            ),
+            Align(
+              alignment: Alignment.center,
+              child: GridView.count(
+                shrinkWrap: true,
+                crossAxisCount: 3,
+                children: _generateItems(items, context),
+              ),
+            ),
+          ],
         ),
       ),
     );
@@ -75,24 +87,51 @@ class _MyHomePageState extends State<MyHomePage> {
 
 List<Widget> _generateItems(List<Map> items, BuildContext context) {
   List<Widget> list = [];
+  int counter = 0;
 
-  items.forEach((item) => list.add(
-    GestureDetector(
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => item['screen'])
-        );
-      },
-      child: Padding(
-        padding: EdgeInsets.all(2),
-        child: Image.asset(
-          item['img'],
-          fit: BoxFit.cover,
+  items.forEach((item) {
+
+    counter++;
+
+    list.add(
+      GestureDetector(
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => item['screen'])
+          );
+        },
+        child: Padding(
+          padding: EdgeInsets.all(2),
+          child: Stack(
+            alignment: Alignment.bottomRight,
+            children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(15.0),
+                child: Image.asset(
+                  item['img'],
+                ),
+              ),
+              Align(
+                alignment: Alignment.bottomRight,
+                child: Padding(
+                  padding: const EdgeInsets.all(5.0),
+                  child: Text(
+                    '$counter',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w700
+                    ),
+                  ),
+                ),
+              )
+            ]
+          ),
         ),
       ),
-    ),
-  ));
+    );
+  });
 
   return list;
 }
