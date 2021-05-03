@@ -1,3 +1,4 @@
+import 'package:como_voce_star_hoje/screens/1.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Como Você Star Hoje?'),
+      home: Um(),
     );
   }
 }
