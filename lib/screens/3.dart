@@ -16,10 +16,33 @@ class Tres extends StatelessWidget {
       ),
       body: Center(
         child: Column(
-          children: [
-            Text("Baby Yoda"),
-            Image.asset(AppImages.tres),
-            Text("Fofo"),
+          children: [Padding(
+              padding: EdgeInsets.all(10),
+              child: Stack(
+                alignment: Alignment.bottomCenter,
+                children: [
+                  Image.asset(AppImages.tres),
+                  Padding(
+                    padding: const EdgeInsets.all(6.0),
+                    child: Text(
+                      'Fofo',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 26,
+                          fontWeight: FontWeight.bold,
+                          shadows: [
+                            Shadow(
+                              blurRadius: 1,
+                              color: Colors.black,
+                              offset: Offset(1,1),
+                            ),
+                          ]
+                      ),
+                    ),
+                  ),
+                ],
+              )
+          ),
           ],
         ),
       ),

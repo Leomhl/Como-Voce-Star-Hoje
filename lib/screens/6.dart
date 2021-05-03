@@ -17,9 +17,33 @@ class Seis extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Text("StormTrooper"),
-            Image.asset(AppImages.seis),
-            Text("Não sabendo que era impossível errar, foi lá e errou"),
+            Padding(
+                padding: EdgeInsets.all(10),
+                child: Stack(
+                  alignment: Alignment.bottomCenter,
+                  children: [
+                    Image.asset(AppImages.seis),
+                    Padding(
+                      padding: const EdgeInsets.all(6.0),
+                      child: Text(
+                        'Não sabendo que era impossível errar, foi lá e errou',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                            shadows: [
+                              Shadow(
+                                blurRadius: 1,
+                                color: Colors.black,
+                                offset: Offset(1,1),
+                              ),
+                            ]
+                        ),
+                      ),
+                    ),
+                  ],
+                )
+            ),
           ],
         ),
       ),

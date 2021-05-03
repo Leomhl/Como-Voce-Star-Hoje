@@ -17,9 +17,33 @@ class Quatro extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Text("Luke"),
-            Image.asset(AppImages.quatro),
-            Text("Carregando o time nas costas"),
+            Padding(
+                padding: EdgeInsets.all(10),
+                child: Stack(
+                  alignment: Alignment.bottomCenter,
+                  children: [
+                    Image.asset(AppImages.quatro),
+                    Padding(
+                      padding: const EdgeInsets.all(6.0),
+                      child: Text(
+                        'Carregando o time nas costas',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 26,
+                            fontWeight: FontWeight.bold,
+                            shadows: [
+                              Shadow(
+                                blurRadius: 1,
+                                color: Colors.black,
+                                offset: Offset(1,1),
+                              ),
+                            ]
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+            ),
           ],
         ),
       ),

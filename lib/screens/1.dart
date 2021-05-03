@@ -18,15 +18,34 @@ class Um extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: EdgeInsets.only(top: 10, bottom: 5),
-              child: Text("Anakin na Lava"),
-            ),
-            Padding(
-              padding: EdgeInsets.all(5),
-              child: Image.asset(AppImages.um),
+              padding: EdgeInsets.all(10),
+              child: Stack(
+                alignment: Alignment.bottomCenter,
+                children: [
+                  Image.asset(AppImages.um),
+                  Padding(
+                    padding: const EdgeInsets.all(6.0),
+                    child: Text(
+                      'Você está pegando fogo hoje!',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 26,
+                          fontWeight: FontWeight.bold,
+                          shadows: [
+                            Shadow(
+                              blurRadius: 1,
+                              color: Colors.black,
+                              offset: Offset(1,1),
+                            ),
+                          ]
+                      ),
+                    ),
+                  ),
+                ],
+              )
             ),
 
-            Text("Você está pegando fogo hoje!"),
+
           ],
         ),
       ),

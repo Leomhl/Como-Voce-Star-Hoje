@@ -17,9 +17,33 @@ class Dois extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Text("Han Solo"),
-            Image.asset(AppImages.dois),
-            Text("Malandro"),
+            Padding(
+                padding: EdgeInsets.all(10),
+                child: Stack(
+                  alignment: Alignment.bottomCenter,
+                  children: [
+                    Image.asset(AppImages.dois),
+                    Padding(
+                      padding: const EdgeInsets.all(6.0),
+                      child: Text(
+                        'Malandro',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 26,
+                            fontWeight: FontWeight.bold,
+                            shadows: [
+                              Shadow(
+                                blurRadius: 1,
+                                color: Colors.black,
+                                offset: Offset(1,1),
+                              ),
+                            ]
+                        ),
+                      ),
+                    ),
+                  ],
+                )
+            ),
           ],
         ),
       ),

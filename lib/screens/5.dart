@@ -17,9 +17,33 @@ class Cinco extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Text("Princesa Leia"),
-            Image.asset(AppImages.cinco),
-            Text("Bela e pronta pra atirar no primeiro que discordar"),
+            Padding(
+                padding: EdgeInsets.all(10),
+                child: Stack(
+                  alignment: Alignment.bottomCenter,
+                  children: [
+                    Image.asset(AppImages.cinco),
+                    Padding(
+                      padding: const EdgeInsets.all(6.0),
+                      child: Text(
+                        'Bela e Pronta para atirar no primeiro que discordar',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                            shadows: [
+                              Shadow(
+                                blurRadius: 1,
+                                color: Colors.black,
+                                offset: Offset(1,1),
+                              ),
+                            ]
+                        ),
+                      ),
+                    ),
+                  ],
+                )
+            ),
           ],
         ),
       ),

@@ -17,9 +17,33 @@ class Nove extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Text("Palpatine"),
-            Image.asset(AppImages.nove),
-            Text("Destruido por fora mas feliz por dentro"),
+            Padding(
+                padding: EdgeInsets.all(10),
+                child: Stack(
+                  alignment: Alignment.bottomCenter,
+                  children: [
+                    Image.asset(AppImages.nove),
+                    Padding(
+                      padding: const EdgeInsets.all(6.0),
+                      child: Text(
+                        'Destruido por fora mas feliz por dentro',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 26,
+                            fontWeight: FontWeight.bold,
+                            shadows: [
+                              Shadow(
+                                blurRadius: 1,
+                                color: Colors.black,
+                                offset: Offset(1,1),
+                              ),
+                            ]
+                        ),
+                      ),
+                    ),
+                  ],
+                )
+            ),
           ],
         ),
       ),
