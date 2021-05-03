@@ -58,27 +58,35 @@ class _MyHomePageState extends State<MyHomePage> {
         centerTitle: true,
         title: Text(widget.title),
       ),
-      body: Padding(
-        padding: EdgeInsets.all(10),
-        child: Column(
-          children: [
-            Text(
-              'Escolha um personagem',
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w700,
-                
-              )
-            ),
-            Align(
-              alignment: Alignment.center,
-              child: GridView.count(
-                shrinkWrap: true,
-                crossAxisCount: 3,
-                children: _generateItems(items, context),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: EdgeInsets.all(10),
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(
+                  top: 15,
+                  bottom: 25
+                ),
+                child: Text(
+                  'De 1 até 9, como você se sente hoje?',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.grey[700]
+                  )
+                ),
               ),
-            ),
-          ],
+              Align(
+                alignment: Alignment.center,
+                child: GridView.count(
+                  shrinkWrap: true,
+                  crossAxisCount: 3,
+                  children: _generateItems(items, context),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
@@ -106,22 +114,19 @@ List<Widget> _generateItems(List<Map> items, BuildContext context) {
           child: Stack(
             alignment: Alignment.bottomRight,
             children: [
-              ClipRRect(
-                borderRadius: BorderRadius.circular(15.0),
-                child: Image.asset(
-                  item['img'],
-                ),
+              Image.asset(
+                item['img'],
               ),
               Align(
                 alignment: Alignment.bottomRight,
                 child: Padding(
-                  padding: const EdgeInsets.all(5.0),
+                  padding: const EdgeInsets.all(6.0),
                   child: Text(
                     '$counter',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 20,
-                      fontWeight: FontWeight.w700
+                      fontSize: 26,
+                      fontWeight: FontWeight.bold
                     ),
                   ),
                 ),
