@@ -9,9 +9,9 @@ class Tres extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Text("Anakin na Lava"),
+            Text("Baby Yoda"),
             Image.asset(AppImages.tres),
-            Text("Você está pegando fogo hoje!"),
+            Text("Fofo"),
           ],
         ),
       ),

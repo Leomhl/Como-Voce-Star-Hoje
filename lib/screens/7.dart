@@ -9,9 +9,9 @@ class Sete extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Text("Anakin na Lava"),
+            Text("C3PO e R2D2"),
             Image.asset(AppImages.sete),
-            Text("Você está pegando fogo hoje!"),
+            Text("Uma máquina"),
           ],
         ),
       ),

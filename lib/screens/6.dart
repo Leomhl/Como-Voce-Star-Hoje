@@ -9,9 +9,9 @@ class Seis extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Text("Anakin na Lava"),
+            Text("StormTrooper"),
             Image.asset(AppImages.seis),
-            Text("Você está pegando fogo hoje!"),
+            Text("Não sabendo que era impossível errar, foi lá e errou"),
           ],
         ),
       ),

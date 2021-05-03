@@ -9,9 +9,9 @@ class Quatro extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Text("Anakin na Lava"),
+            Text("Luke"),
             Image.asset(AppImages.quatro),
-            Text("Você está pegando fogo hoje!"),
+            Text("Carregando o time nas costas"),
           ],
         ),
       ),

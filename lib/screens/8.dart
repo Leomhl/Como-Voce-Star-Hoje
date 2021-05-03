@@ -9,9 +9,9 @@ class Oito extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Text("Anakin na Lava"),
+            Text("Darth Vader"),
             Image.asset(AppImages.oito),
-            Text("Você está pegando fogo hoje!"),
+            Text("A ponto de estrangular alguém"),
           ],
         ),
       ),

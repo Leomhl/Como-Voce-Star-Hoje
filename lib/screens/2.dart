@@ -9,9 +9,9 @@ class Dois extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Text("Anakin na Lava"),
+            Text("Han Solo"),
             Image.asset(AppImages.dois),
-            Text("Você está pegando fogo hoje!"),
+            Text("Malandro"),
           ],
         ),
       ),

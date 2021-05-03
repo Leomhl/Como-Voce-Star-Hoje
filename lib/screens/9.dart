@@ -9,9 +9,9 @@ class Nove extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Text("Anakin na Lava"),
+            Text("Palpatine"),
             Image.asset(AppImages.nove),
-            Text("Você está pegando fogo hoje!"),
+            Text("Destruido por fora mas feliz por dentro"),
           ],
         ),
       ),

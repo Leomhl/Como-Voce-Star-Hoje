@@ -9,9 +9,9 @@ class Cinco extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Text("Anakin na Lava"),
+            Text("Princesa Leia"),
             Image.asset(AppImages.cinco),
-            Text("Você está pegando fogo hoje!"),
+            Text("Bela e pronta pra atirar no primeiro que discordar"),
           ],
         ),
       ),
