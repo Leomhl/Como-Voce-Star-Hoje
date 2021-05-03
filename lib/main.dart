@@ -88,7 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     EdgeInsets.only(top: 10, bottom: 10, left: 5, right: 5),
                 child: Center(
                     child:
-                        Image.network('https://i.redd.it/h2vj5cpoghe11.jpg')),
+                        Image.asset('https://i.redd.it/h2vj5cpoghe11.jpg')),
               );
             }),
           ),

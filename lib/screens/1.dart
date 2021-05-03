@@ -1,3 +1,4 @@
+import 'package:como_voce_star_hoje/classes/app_images.dart';
 import 'package:flutter/material.dart';
 
 class Um extends StatelessWidget {
@@ -9,8 +10,8 @@ class Um extends StatelessWidget {
         child: Column(
           children: [
             Text("Anakin na Lava"),
-            Image.network("https://i.redd.it/h2vj5cpoghe11.jpg"),
-            Text("Você está pegadno fogo hoje!"),
+            Image.asset(AppImages.um),
+            Text("Você está pegando fogo hoje!"),
           ],
         ),
       ),
