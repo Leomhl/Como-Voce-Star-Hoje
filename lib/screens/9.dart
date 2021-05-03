@@ -8,6 +8,11 @@ class Nove extends StatelessWidget {
       appBar: AppBar(
         title: Text("Palpatine"),
         centerTitle: true,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(
+            bottom: Radius.circular(30),
+          ),
+        ),
       ),
       body: Center(
         child: Column(

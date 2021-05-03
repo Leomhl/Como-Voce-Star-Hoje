@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       title: 'StarToday',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.indigo,
       ),
       home: MyHomePage(title: 'StarToday'),
     );
@@ -57,6 +57,11 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         centerTitle: true,
         title: Text(widget.title),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(
+            bottom: Radius.circular(30),
+          ),
+        ),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -102,7 +107,7 @@ List<Widget> _generateItems(List<Map> items, BuildContext context) {
     counter++;
 
     list.add(
-      GestureDetector(
+      InkWell(
         onTap: () {
           Navigator.push(
             context,
