@@ -16,7 +16,11 @@ class MyApp extends StatelessWidget {
       title: 'StarToday',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.indigo,
+        appBarTheme: AppBarTheme(
+          color: Color(0xFFFFE81F),
+        ),
+        primarySwatch: Colors.yellow,
+        scaffoldBackgroundColor: Colors.black45,
       ),
       home: MyHomePage(),
     );

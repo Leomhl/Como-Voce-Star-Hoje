@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:como_voce_star_hoje/classes/app_images.dart';
-
 
 class Tela extends StatelessWidget {
   final String titulo;
@@ -15,11 +13,6 @@ class Tela extends StatelessWidget {
         automaticallyImplyLeading: false,
         title: Text(titulo),
         centerTitle: true,
-        // shape: RoundedRectangleBorder(
-        //   borderRadius: BorderRadius.vertical(
-        //     bottom: Radius.circular(30),
-        //   ),
-        // ),
       ),
       body: Center(
         child: Column(
@@ -50,7 +43,7 @@ class Tela extends StatelessWidget {
                     mensagem,
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      color: Colors.white,
+                      color: Colors.yellow,
                       fontSize: 26,
                       fontWeight: FontWeight.bold,
                     ),
@@ -68,9 +61,8 @@ class Tela extends StatelessWidget {
                   },
                   child: Text('Tentar de Novo'),
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.white,
-                    onPrimary: Colors.indigo,
-                    side: BorderSide(color: Colors.indigo, width: 2),
+                    primary: Colors.yellow,
+                    onPrimary: Colors.black,
                   ),
                 ),
               ),

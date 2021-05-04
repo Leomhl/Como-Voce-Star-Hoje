@@ -2,8 +2,6 @@ import 'package:como_voce_star_hoje/classes/app_images.dart';
 import 'package:como_voce_star_hoje/screens/telas.dart';
 import 'package:flutter/material.dart';
 
-import '1.dart';
-
 class ListScreen extends StatelessWidget {
   List items = [
     {
@@ -53,7 +51,6 @@ class ListScreen extends StatelessWidget {
     },
   ];
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -70,10 +67,10 @@ class ListScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(top: 15, bottom: 25),
                 child: Text('De 1 até 9, como você se sente hoje?',
-                    style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.grey[700])),
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.yellow)),
               ),
               Align(
                 alignment: Alignment.center,
@@ -140,7 +137,7 @@ List<Widget> _generateItems(List items, BuildContext context) {
                 child: Text(
                   '$counter',
                   style: TextStyle(
-                      color: Colors.white,
+                      color: Colors.yellow,
                       fontSize: 26,
                       fontWeight: FontWeight.bold),
                 ),
