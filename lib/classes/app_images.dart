@@ -9,5 +9,5 @@ class AppImages {
   static String get sete => "assets/images/7.jpg";
   static String get oito => "assets/images/8.jpg";
   static String get nove => "assets/images/9.jpg";
-
+  static String get bg => "assets/images/bg.jpg";
 }
