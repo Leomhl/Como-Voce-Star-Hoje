@@ -129,9 +129,26 @@ List<Widget> _generateItems(List<Map> items, BuildContext context) {
                   child: Text(
                     '$counter',
                     style: TextStyle(
-                      color: Colors.white,
                       fontSize: 26,
-                      fontWeight: FontWeight.bold
+                      fontWeight: FontWeight.bold,
+                      foreground: Paint()
+                        ..style = PaintingStyle.stroke
+                        ..strokeWidth = 6
+                        ..color = Colors.black,
+                    ),
+                  ),
+                ),
+              ),
+              Align(
+                alignment: Alignment.bottomRight,
+                child: Padding(
+                  padding: const EdgeInsets.all(6.0),
+                  child: Text(
+                    '$counter',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 26,
+                        fontWeight: FontWeight.bold
                     ),
                   ),
                 ),

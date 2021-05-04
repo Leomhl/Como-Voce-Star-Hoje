@@ -28,16 +28,23 @@ class Cinco extends StatelessWidget {
                       child: Text(
                         'Bela e Pronta para atirar no primeiro que discordar',
                         style: TextStyle(
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                            foreground: Paint()
+                            ..style = PaintingStyle.stroke
+                            ..strokeWidth = 6
+                            ..color = Colors.black,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(6.0),
+                      child: Text(
+                        'Bela e Pronta para atirar no primeiro que discordar',
+                        style: TextStyle(
                             color: Colors.white,
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
-                            shadows: [
-                              Shadow(
-                                blurRadius: 1,
-                                color: Colors.black,
-                                offset: Offset(1,1),
-                              ),
-                            ]
                         ),
                       ),
                     ),

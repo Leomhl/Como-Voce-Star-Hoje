@@ -26,18 +26,25 @@ class Nove extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.all(6.0),
                       child: Text(
-                        'Destruido por fora mas feliz por dentro',
+                        'Destruído por fora mas feliz por dentro',
                         style: TextStyle(
-                            color: Colors.white,
                             fontSize: 26,
                             fontWeight: FontWeight.bold,
-                            shadows: [
-                              Shadow(
-                                blurRadius: 1,
-                                color: Colors.black,
-                                offset: Offset(1,1),
-                              ),
-                            ]
+                            foreground: Paint()
+                            ..style = PaintingStyle.stroke
+                            ..strokeWidth = 6
+                            ..color = Colors.black,
+                          ),
+                        ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(6.0),
+                      child: Text(
+                        'Destruído por fora mas feliz por dentro',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 26,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     ),

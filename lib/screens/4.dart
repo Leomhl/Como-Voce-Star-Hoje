@@ -28,16 +28,23 @@ class Quatro extends StatelessWidget {
                       child: Text(
                         'Carregando o time nas costas',
                         style: TextStyle(
+                          fontSize: 26,
+                          fontWeight: FontWeight.bold,
+                          foreground: Paint()
+                            ..style = PaintingStyle.stroke
+                            ..strokeWidth = 6
+                            ..color = Colors.black,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(6.0),
+                      child: Text(
+                        'Carregando o time nas costas',
+                        style: TextStyle(
                             color: Colors.white,
                             fontSize: 26,
                             fontWeight: FontWeight.bold,
-                            shadows: [
-                              Shadow(
-                                blurRadius: 1,
-                                color: Colors.black,
-                                offset: Offset(1,1),
-                              ),
-                            ]
                         ),
                       ),
                     ),

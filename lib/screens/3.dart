@@ -27,16 +27,23 @@ class Tres extends StatelessWidget {
                     child: Text(
                       'Fofo',
                       style: TextStyle(
-                          color: Colors.white,
                           fontSize: 26,
                           fontWeight: FontWeight.bold,
-                          shadows: [
-                            Shadow(
-                              blurRadius: 1,
-                              color: Colors.black,
-                              offset: Offset(1,1),
-                            ),
-                          ]
+                          foreground: Paint()
+                          ..style = PaintingStyle.stroke
+                          ..strokeWidth = 6
+                          ..color = Colors.black,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(6.0),
+                    child: Text(
+                      'Fofo',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 26,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ),

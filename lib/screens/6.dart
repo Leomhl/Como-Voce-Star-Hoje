@@ -28,16 +28,23 @@ class Seis extends StatelessWidget {
                       child: Text(
                         'Não sabendo que era impossível errar, foi lá e errou',
                         style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          foreground: Paint()
+                            ..style = PaintingStyle.stroke
+                            ..strokeWidth = 6
+                            ..color = Colors.black,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(6.0),
+                      child: Text(
+                        'Não sabendo que era impossível errar, foi lá e errou',
+                        style: TextStyle(
                             color: Colors.white,
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
-                            shadows: [
-                              Shadow(
-                                blurRadius: 1,
-                                color: Colors.black,
-                                offset: Offset(1,1),
-                              ),
-                            ]
                         ),
                       ),
                     ),
