@@ -17,40 +17,39 @@ class Tres extends StatelessWidget {
       ),
       body: Center(
         child: Column(
-          children: [Padding(
-              padding: EdgeInsets.all(10),
-              child: Stack(
-                alignment: Alignment.bottomCenter,
-                children: [
-                  Image.asset(AppImages.tres),
-                  Padding(
-                    padding: const EdgeInsets.all(6.0),
-                    child: Text(
-                      'Fofo',
-                      style: TextStyle(
-                          fontSize: 26,
-                          fontWeight: FontWeight.bold,
-                          foreground: Paint()
-                          ..style = PaintingStyle.stroke
-                          ..strokeWidth = 6
-                          ..color = Colors.black,
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(6.0),
-                    child: Text(
-                      'Fofo',
-                      style: TextStyle(
-                        color: Colors.white,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Stack(
+              alignment: Alignment.bottomCenter,
+              children: [
+                Image.asset(AppImages.tres),
+                Padding(
+                  padding: const EdgeInsets.all(6.0),
+                  child: Text(
+                    'Fofo',
+                    style: TextStyle(
                         fontSize: 26,
                         fontWeight: FontWeight.bold,
-                      ),
+                        foreground: Paint()
+                        ..style = PaintingStyle.stroke
+                        ..strokeWidth = 6
+                        ..color = Colors.black,
                     ),
                   ),
-                ],
-              ),
-          ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(6.0),
+                  child: Text(
+                    'Fofo',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 26,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ],
+            ),
             SizedBox(
               height: 50,
             ),

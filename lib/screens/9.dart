@@ -17,42 +17,40 @@ class Nove extends StatelessWidget {
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Padding(
-                padding: EdgeInsets.all(10),
-                child: Stack(
-                  alignment: Alignment.bottomCenter,
-                  children: [
-                    Image.asset(AppImages.nove),
-                    Padding(
-                      padding: const EdgeInsets.all(6.0),
-                      child: Text(
-                        'Destruído por fora mas feliz por dentro',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                            fontSize: 26,
-                            fontWeight: FontWeight.bold,
-                            foreground: Paint()
-                            ..style = PaintingStyle.stroke
-                            ..strokeWidth = 6
-                            ..color = Colors.black,
-                          ),
-                        ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(6.0),
-                      child: Text(
-                        'Destruído por fora mas feliz por dentro',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 26,
-                          fontWeight: FontWeight.bold,
-                        ),
+            Stack(
+              alignment: Alignment.bottomCenter,
+              children: [
+                Image.asset(AppImages.nove),
+                Padding(
+                  padding: const EdgeInsets.all(6.0),
+                  child: Text(
+                    'Destruído por fora mas feliz por dentro',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 26,
+                        fontWeight: FontWeight.bold,
+                        foreground: Paint()
+                        ..style = PaintingStyle.stroke
+                        ..strokeWidth = 6
+                        ..color = Colors.black,
                       ),
                     ),
-                  ],
                 ),
+                Padding(
+                  padding: const EdgeInsets.all(6.0),
+                  child: Text(
+                    'Destruído por fora mas feliz por dentro',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 26,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ],
             ),
             SizedBox(
               height: 50,

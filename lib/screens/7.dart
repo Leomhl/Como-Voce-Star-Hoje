@@ -18,40 +18,38 @@ class Sete extends StatelessWidget {
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Padding(
-                padding: EdgeInsets.all(10),
-                child: Stack(
-                  alignment: Alignment.bottomCenter,
-                  children: [
-                    Image.asset(AppImages.sete),
-                    Padding(
-                      padding: const EdgeInsets.all(6.0),
-                      child: Text(
-                        'Uma máquina de produtividade',
-                        style: TextStyle(
-                          fontSize: 25,
-                          fontWeight: FontWeight.bold,
-                          foreground: Paint()
-                            ..style = PaintingStyle.stroke
-                            ..strokeWidth = 6
-                            ..color = Colors.black,
-                        ),
-                      ),
+            Stack(
+              alignment: Alignment.bottomCenter,
+              children: [
+                Image.asset(AppImages.sete),
+                Padding(
+                  padding: const EdgeInsets.all(6.0),
+                  child: Text(
+                    'Uma máquina de produtividade',
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                      foreground: Paint()
+                        ..style = PaintingStyle.stroke
+                        ..strokeWidth = 6
+                        ..color = Colors.black,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(6.0),
-                      child: Text(
-                        'Uma máquina de produtividade',
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 25,
-                            fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
+                Padding(
+                  padding: const EdgeInsets.all(6.0),
+                  child: Text(
+                    'Uma máquina de produtividade',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ],
             ),
             SizedBox(
               height: 50,

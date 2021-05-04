@@ -17,42 +17,40 @@ class Seis extends StatelessWidget {
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Padding(
-                padding: EdgeInsets.all(10),
-                child: Stack(
-                  alignment: Alignment.bottomCenter,
-                  children: [
-                    Image.asset(AppImages.seis),
-                    Padding(
-                      padding: const EdgeInsets.all(6.0),
-                      child: Text(
-                        'Não sabendo que era impossível errar, foi lá e errou',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold,
-                          foreground: Paint()
-                            ..style = PaintingStyle.stroke
-                            ..strokeWidth = 6
-                            ..color = Colors.black,
-                        ),
-                      ),
+            Stack(
+              alignment: Alignment.bottomCenter,
+              children: [
+                Image.asset(AppImages.seis),
+                Padding(
+                  padding: const EdgeInsets.all(6.0),
+                  child: Text(
+                    'Não sabendo que era impossível errar, foi lá e errou',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                      foreground: Paint()
+                        ..style = PaintingStyle.stroke
+                        ..strokeWidth = 6
+                        ..color = Colors.black,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(6.0),
-                      child: Text(
-                        'Não sabendo que era impossível errar, foi lá e errou',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 22,
-                            fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
+                Padding(
+                  padding: const EdgeInsets.all(6.0),
+                  child: Text(
+                    'Não sabendo que era impossível errar, foi lá e errou',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ],
             ),
             SizedBox(
               height: 50,
