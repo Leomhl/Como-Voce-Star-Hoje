@@ -6,6 +6,7 @@ class Dois extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: Text("Han Solo"),
         centerTitle: true,
         // shape: RoundedRectangleBorder(
@@ -49,7 +50,27 @@ class Dois extends StatelessWidget {
                       ),
                     ),
                   ],
-                )
+                ),
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  child: Text('Tentar de Novo'),
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.white,
+                    onPrimary: Colors.indigo,
+                    side: BorderSide(color: Colors.indigo, width: 2),
+                  ),
+                ),
+              ),
             ),
           ],
         ),

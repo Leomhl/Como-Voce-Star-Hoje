@@ -6,6 +6,7 @@ class Seis extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: Text("StormTrooper"),
         centerTitle: true,
         // shape: RoundedRectangleBorder(
@@ -27,6 +28,7 @@ class Seis extends StatelessWidget {
                       padding: const EdgeInsets.all(6.0),
                       child: Text(
                         'Não sabendo que era impossível errar, foi lá e errou',
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -41,6 +43,7 @@ class Seis extends StatelessWidget {
                       padding: const EdgeInsets.all(6.0),
                       child: Text(
                         'Não sabendo que era impossível errar, foi lá e errou',
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 22,
@@ -49,7 +52,27 @@ class Seis extends StatelessWidget {
                       ),
                     ),
                   ],
-                )
+                ),
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  child: Text('Tentar de Novo'),
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.white,
+                    onPrimary: Colors.indigo,
+                    side: BorderSide(color: Colors.indigo, width: 2),
+                  ),
+                ),
+              ),
             ),
           ],
         ),

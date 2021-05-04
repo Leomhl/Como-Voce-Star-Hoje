@@ -6,6 +6,7 @@ class Um extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: Text("Anakin"),
         centerTitle: true,
         // shape: RoundedRectangleBorder(
@@ -18,42 +19,59 @@ class Um extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: EdgeInsets.all(10),
-              child: Stack(
-                alignment: Alignment.bottomCenter,
-                children: [
-                  Image.asset(AppImages.um),
-                  Padding(
-                    padding: const EdgeInsets.all(6.0),
-                    child: Text(
-                      'Você está pegando fogo hoje!',
-                      style: TextStyle(
-                        fontSize: 26,
-                        fontWeight: FontWeight.bold,
-                        foreground: Paint()
-                          ..style = PaintingStyle.stroke
-                          ..strokeWidth = 6
-                          ..color = Colors.black,
+                padding: EdgeInsets.all(10),
+                child: Stack(
+                  alignment: Alignment.bottomCenter,
+                  children: [
+                    Image.asset(AppImages.um),
+                    Padding(
+                      padding: const EdgeInsets.all(6.0),
+                      child: Text(
+                        'Você está pegando fogo hoje!',
+                        style: TextStyle(
+                          fontSize: 26,
+                          fontWeight: FontWeight.bold,
+                          foreground: Paint()
+                            ..style = PaintingStyle.stroke
+                            ..strokeWidth = 6
+                            ..color = Colors.black,
+                        ),
                       ),
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(6.0),
-                    child: Text(
-                      'Você está pegando fogo hoje!',
-                      style: TextStyle(
+                    Padding(
+                      padding: const EdgeInsets.all(6.0),
+                      child: Text(
+                        'Você está pegando fogo hoje!',
+                        style: TextStyle(
                           color: Colors.white,
                           fontSize: 26,
                           fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
-                  ),
-
-                ],
-              )
+                  ],
+                ),
             ),
-
-
+            SizedBox(
+              height: 50,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  child: Text('Tentar de Novo'),
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.white,
+                    onPrimary: Colors.indigo,
+                    side: BorderSide(color: Colors.indigo, width: 2),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
