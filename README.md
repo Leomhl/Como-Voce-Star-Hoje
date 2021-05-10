@@ -1,16 +1,9 @@
-# como_voce_star_hoje
+# Como você StarHoje
 
-A new Flutter application.
+Este aplicativo foi desenvolvido por [Caio Couto Moreira](https://github.com/Kakomo) e [Leonardo Herdy Marinho](https://github.com/Leomhl) para o desafio de onboarding da equipe nova de fluter da [Nubank](https://nubank.com.br/).
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+O projeto consistem em um mini gerador de memes!
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![](image.gif)
