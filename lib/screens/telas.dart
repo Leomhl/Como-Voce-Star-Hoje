@@ -5,7 +5,7 @@ class Tela extends StatelessWidget {
   final String imagem;
   final String mensagem;
 
-  Tela({@required this.titulo, this.imagem, this.mensagem});
+  Tela({required this.titulo, required this.imagem, required this.mensagem});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
